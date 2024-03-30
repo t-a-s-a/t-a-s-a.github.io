@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li> 
+            <li><a href="reporte.html">Contrato</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Registro de Eventos</h2>
+        <form action="#" method="post">
+            <label for="fecha_reporte">Fecha de Reporte:</label>
+            <input type="date" id="fecha_reporte" name="fecha_reporte" required><br>
+
+            <label for="fecha_evento">Fecha de Evento:</label>
+            <input type="date" id="fecha_evento" name="fecha_evento" required><br>
+
+            <label for="lugar_evento">Lugar del Evento:</label>
+            <input type="text" id="lugar_evento" name="lugar_evento" required><br>
+
+            <label for="fecha_entrega">Fecha de Entrega del Trabajo:</label>
+            <input type="date" id="fecha_entrega" name="fecha_entrega" required><br>
+
+            <label for="domicilio_cliente">Domicilio del Cliente:</label>
+            <input type="text" id="domicilio_cliente" name="domicilio_cliente" required><br>
+
+            <label for="paquete">Paquete:</label>
+            <select id="paquete" name="paquete" required>
+                <option value="1">..............</option>
+                <option value="2">Paquete plata</option>
+                <option value="3">Paquete platino</option>
+                <option value="4">Paquete oro</option>
+            </select><br>
+
+            <label for="total">Total:</label>
+            <input type="number" id="total" name="total" required><br>
+
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+</body>
+</html>

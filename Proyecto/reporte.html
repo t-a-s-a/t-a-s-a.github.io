@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+  </label>
+  <ul>
+      <li><a class="active" href="index.html">Inicio</a></li>
+      <li><a class="Editor" href="registro.html">Reportes</a></li>
+      <li><a href="#">Contratos</a></li>
+  </ul>
+</nav>
+<div class="report-container">
+  <h2>Reporte de ventas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Código reporte</th>
+        <th>Fecha reporte</th>
+        <th>Fecha de evento</th>
+        <th>Lugar de evento</th>
+        <th>Fecha de entrega de trabajo</th>
+        <th>Domicilio del cliente</th>
+        <th>Paquete seleccionado</th>
+        <th>Cantidad vendida</th>
+        <th>Precio unitario</th>
+        <th>Total ventas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>2023-04-20</td>
+        <td>2023-05-05</td>
+        <td>Salón de eventos "La Casa"</td>
+        <td>2023-05-06</td>
+        <td>Calle Falsa 123, Col. Centro</td>
+        <td>Paquete Oro</td>
+        <td>100</td>
+        <td>$10.00</td>
+        <td>$1,000.00</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>2023-04-20</td>
+        <td>2023-06-15</td>
+        <td>Jardines del Parque</td>
+        <td>2023-06-16</td>
+        <td>Calle Falsa 456, Col. Reforma</td>
+        <td>Paquete Platino</td>
+        <td>50</td>
+        <td>$20.00</td>
+        <td>$1,000.00</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>2023-04-20</td>
+        <td>2023-07-10</td>
+        <td>Salón de eventos "El Rey"</td>
+        <td>2023-07-11</td>
+        <td>Calle Falsa 789, Col. San Pedro</td>
+        <td>Paquete Oro</td>
+        <td>75</td>
+        <td>$15.00</td>
+        <td>$1,125.00</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="button-container">
+  <button onclick="addRow()">Nuevo Reporte</button>
+</div>
+<!-- partial -->
+  <script  src="css/script3.js"></script>
+
+</body>
+</html>

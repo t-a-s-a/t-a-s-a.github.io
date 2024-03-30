@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <p class="txt-1"></p>
+            <h2></h2>
+            
+            
+    </div>
+        <form class="form" onsubmit="checkCredentials(event)">
+            <div class="ali">
+                <h2>Bienvenido</h2>
+            </div>
+            
+            <div class="inputs">
+                <input type="email" class="box" id="username" placeholder="Ingrese su usuario">
+                <input type="password" class="box" id="password" placeholder="Ingrese su Contraseña">
+                <a href="#">Olvidaste tu contraseña</a>
+                <input type="submit" value="Entrar" class="submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function checkCredentials(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Obtener los valores del usuario y la contraseña ingresados
+            var usernameInput = document.getElementById("username");
+            var passwordInput = document.getElementById("password");
+            var username = usernameInput.value;
+            var password = passwordInput.value;
+
+            // Verificar si los datos son correctos
+            if (username === "foto@gmail.com" && password === "1234") {
+                // Redirigir a la página index.html
+                window.location.href = "index.html";
+            } else {
+                // Mostrar un mensaje de error o realizar alguna acción adicional
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+</body>
+</html>
+
+
